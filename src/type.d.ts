@@ -4,3 +4,9 @@ export interface PageType{
   content:string;
 }
 
+export type ApiPage = Omit<PageType, 'id'>
+
+export interface PageMutation {
+  title:string;
+  content:string;
+}
